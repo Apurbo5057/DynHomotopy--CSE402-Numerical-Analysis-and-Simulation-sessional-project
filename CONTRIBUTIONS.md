@@ -74,10 +74,8 @@ member's work in full.
 Jonayed built the power flow model that every other part runs on, the checks that decide
 whether a result is right, and the study that compares every member's changes. His root
 check is behind the project's main finding: that 14 of the paper's 141 converged runs on
-the wider test bed reach the wrong solution. He also set up and maintains the project's
-public GitHub repository, where the code of all five members comes together, and his
-`g(x)` / `jacobian(x)` interface is what every other member's solver, integrator and
-modification is written against.
+the wider test bed reach the wrong solution. His `g(x)` / `jacobian(x)` interface is what
+every other member's solver, integrator and modification is written against.
 
 ### Core code: the power flow model
 

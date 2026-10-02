@@ -1475,7 +1475,7 @@ roll number; the full account is in \code{CONTRIBUTIONS.md} in the repository~\c
 2105040\newline Sadman bin Tareq & Sparse LU with the LU counter, result types, figure style & Section 4.4, Figure 5 & Richardson step control, scaled homotopy; Gauss elimination and LU from scratch; command-line tool & Jacobian sparsity, Section 4.4 grid, Figure 5 cost, Richardson paths; tests of Gauss/LU, pivoting, Richardson, scaled homotopy, CLI \\
 2105057\newline Mosharaf Hossain Apurbo & Fixed-point homotopy, FE/BE/RK2 integrators, path schedules, hybrid method & Figures 1, 2, 4, Section 4.2.1 & \code{solve()} with switches, Newton corrector, adaptive steps; spectrum of the Jacobian & Tutorial geometry, first step, adaptive path, spectrum figures; tests of path, first step, tutorial, switch-off identity, corrector, eigenvalues \\
 2105058\newline Elias Hasbi & NR, FDXB (XB), reconstruction of GSH-NR & Tables 7, 8 & Optimal multiplier, Newton homotopy; NR and FDXB with our own LU & Timing, cost against robustness, per-case map, rescue histories; tests of NR/FDXB counts, multiplier, own-LU iterates, Newton homotopy \\
-2105060\newline Jonayed Mohiuddin Shanto & Public GitHub repository; power flow model ($g$, $J$, case reader) and the solver interface; test-system download, experiment runner & Flat-start check and base-MVA finding, root check of Table 7, audit of the paper & Wider test bed of 34 systems, solution (root) check, the comparison study of all modifications; feasibility maps & Test-systems table and figure, audit table, feasibility figure, study summary figure and table; Jacobian test \\
+2105060\newline Jonayed Mohiuddin Shanto & Power flow model ($g$, $J$, case reader) and the solver interface; test-system download, experiment runner & Flat-start check and base-MVA finding, root check of Table 7, audit of the paper & Wider test bed of 34 systems, solution (root) check, the comparison study of all modifications; feasibility maps & Test-systems table and figure, audit table, feasibility figure, study summary figure and table; Jacobian test \\
 \bottomrule
 \end{tabularx}
 \end{table*}
@@ -1507,8 +1507,7 @@ recommended configuration (152 runs, 7\% fewer LUs), the Newton homotopy, and NR
 own LU (\cref{tab:ownlu}).
 
 \paragraph{2105060, Jonayed Mohiuddin Shanto}
-Set up and maintains the project's public GitHub repository~\cite{ourrepo}, where the code of all five
-members comes together. Built the power flow model that every other part runs on: the case reader, the
+Built the power flow model that every other part runs on: the case reader, the
 equations $g(x)$ and the Jacobian $J(x)$, and the \code{g}/\code{jacobian} interface against which every
 solver, integrator and modification of the team is written, so that the same code runs on the $2\times2$
 tutorial and on the 109{,}272-bus grid. Wrote the download of the test systems and the runner of all 15
