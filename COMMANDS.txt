@@ -1,0 +1,39 @@
+ALL EXPERIMENTS
+python run_all.py
+python run_all.py --reps 20
+python run_all.py --only 3 4
+
+BASE PAPER
+python -m improvements path/to/mycase.mat
+python run_all.py --only 1 2 3 4 5 6 7 8 9 10
+
+IMPROVEMENTS
+python -m improvements path/to/mycase.mat
+python -m improvements case18482
+python -m improvements case18482 --multiplier
+python -m improvements case18482 --corrector
+python -m improvements case18482 --adaptive
+python -m improvements case18482 --richardson
+python -m improvements case18482 --richardson --richardson-tol 0.5
+python -m improvements case18482 --step BE
+python -m improvements case18482 --step BE-chord
+python -m improvements case18482 --step FE
+python -m improvements case18482 --step RK2
+python -m improvements case18482 --step RK4
+python -m improvements case18482 --homotopy fpv
+python -m improvements case18482 --homotopy scaled
+python -m improvements case18482 --homotopy newton
+python -m improvements case18482 --refiner NR
+python -m improvements case18482 --refiner FDXB
+python -m improvements case18482 --dt0 0.005 --K 1e-4
+python -m improvements case18482 --multiplier --corrector
+python -m improvements case6024 --multiplier --richardson
+python -m improvements case36964 --dt0 0.1 --K 2e-3 --corrector --multiplier
+python -m improvements spectrum case18482
+python -m improvements spectrum case18482 --delta 0.02
+python -m improvements feasibility case6024
+python -m improvements tune case6024
+python -m improvements scratch case_ACTIVSg500limit
+python -m improvements scratch case_ACTIVSg500limit --refiner FDXB
+
+
