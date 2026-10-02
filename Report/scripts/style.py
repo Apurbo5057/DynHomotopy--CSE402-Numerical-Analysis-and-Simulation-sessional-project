@@ -8,7 +8,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[2]
-REPORT = REPO / "report"
+REPORT = REPO / "Report" / "latex_source"
 FIG = REPORT / "figures"
 GEN = REPORT / "generated"
 TABLES = REPO / "results" / "tables"

@@ -47,8 +47,8 @@ As a team we did five things:
    maps of where the method works, golden-section tuning, error-controlled steps, and
    linear solvers written by hand. All of these are implemented, and each has a
    measured result, including the ones that did not work.
-5. **Generated the report.** Two scripts in `report/scripts/` build every figure and
-   table of the project report (`report/main.tex`): one runs the project code, the
+5. **Generated the report.** Two scripts in `Report/scripts/` build every figure and
+   table of the project report (`Report/latex_source/A_12.tex`): one runs the project code, the
    other reads the saved results. So the report can be rebuilt after any rerun.
 
 ## Who did what
@@ -153,16 +153,16 @@ working band lies at a much larger delta than the paper's 0.02.
 
 ### Report: test systems and the study summary
 
-- In `report/scripts/figures_from_code.py`, the test-system statistics. For each of the
+- In `Report/scripts/figures_from_code.py`, the test-system statistics. For each of the
   34 grids it records the number of buses, PV buses and unknowns, the non-zeros of the
   Jacobian, the flat-start mismatch, and whether NR converges from a flat start and from
-  the case file's own start (cached in `report/generated/systems.json`). From these it
+  the case file's own start (cached in `Report/latex_source/generated/systems.json`). From these it
   writes the test-systems table of the report (`systems_rows.tex`, which also lists the
   networks each large grid was built from) and a figure comparing the size of every grid
   with its flat-start mismatch (`systems.pdf`).
 - The report version of the feasibility maps (`feasibility.pdf`). The grids are cached in
   `feasibility.json`, so the report can be rebuilt without running them again.
-- In `report/scripts/figures_from_results.py`, the summary of the improvements study.
+- In `Report/scripts/figures_from_results.py`, the summary of the improvements study.
   From `improvements_raw.csv` it counts, for every configuration, the runs solved in each
   setting, the wrong roots, and the runs gained and lost against the paper's method,
   splitting the gains into rescues, root fixes and speed-ups. It draws the headline
@@ -440,7 +440,7 @@ the tools that run any part of the project from the command line.
 
 ### Report: figure style, sparsity, Section 4.4, Figure 5 and Richardson paths
 
-- `report/scripts/style.py`: the colours, fonts and plot settings shared by every report
+- `Report/scripts/style.py`: the colours, fonts and plot settings shared by every report
   figure, and the helpers that save the figures and the generated LaTeX tables.
 - `spy.pdf` (`figures_from_code.py`): the sparsity pattern of the Jacobian for the 2000-,
   18,482- and 109,272-bus grids, with the number of unknowns and non-zeros. It shows why

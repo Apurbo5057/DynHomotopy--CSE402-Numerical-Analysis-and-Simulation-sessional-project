@@ -6,15 +6,15 @@ data/cases/*.mat
 venv
 
 # LaTeX build files of the report
-report/*.aux
-report/*.log
-report/*.lof
-report/*.lot
-report/*.out
-report/*.toc
-report/*.fls
-report/*.fdb_latexmk
-report/*.synctex.gz
+Report/latex_source/*.aux
+Report/latex_source/*.log
+Report/latex_source/*.lof
+Report/latex_source/*.lot
+Report/latex_source/*.out
+Report/latex_source/*.toc
+Report/latex_source/*.fls
+Report/latex_source/*.fdb_latexmk
+Report/latex_source/*.synctex.gz
 
 # Office lock files
 ~$*
